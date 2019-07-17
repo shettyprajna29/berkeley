@@ -493,7 +493,7 @@ h6.circle {
 }
 .sub-title h1 {
     font-size: 45px;
-    line-height: 45px;
+    line-height: 55px;
     color: #2b3181;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -596,6 +596,16 @@ hr {
     line-height: 20px;
     letter-spacing: 2px;
     min-height: 100px;
+}
+.hyatt-desc p {
+    text-align: center;
+    padding-top: 30px;
+}
+.hyatt-img img {
+    width: 100%;
+}
+.hyatt-img {
+    margin: 50px 0
 }
 
 /* prajna css ends */
