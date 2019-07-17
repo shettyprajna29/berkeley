@@ -1,0 +1,601 @@
+reset css starts*/
+
+/* BASIC CSS */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+body {
+    font-family: 'Gotham-Light';
+    letter-spacing: 1px;
+    overflow-x: hidden;
+    color: #000;
+    font-size: 18px;
+}
+ol, ul {
+    list-style: none;
+    padding: 0
+}
+blockquote, q {
+    quotes: none
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+/* @font-face{font-family:'AvantGarde-Demi';src:url(data:application/x-font-woff;charset=utf-8;base64,) format("woff"),url(fonts/AvantGarde-Demi.ttf) format("truetype"),url(fonts/AvantGarde-Demi.svg#AvantGarde-Demi) format("svg");font-weight:400;font-style:normal}
+@font-face{font-family:'ITC Avant Garde Pro Md';src:url(../fonts/ITCAvantGardePro-Md.eot);src:url(../fonts/ITCAvantGardePro-Md.eot?#iefix) format("embedded-opentype"),url(../fonts/ITCAvantGardePro-Md.woff2) format("woff2"),url(../fonts/ITCAvantGardePro-Md.woff) format("woff"),url(../fonts/ITCAvantGardePro-Md.ttf) format("truetype"),url(../fonts/ITCAvantGardePro-Md.svg#ITCAvantGardePro-Md) format("svg");font-weight:500;font-style:normal}
+@font-face{font-family:'ITC Avant Garde Pro Bk';src:url(../fonts/ITCAvantGardePro-Bk.eot);src:url(../fonts/ITCAvantGardePro-Bk.eot?#iefix) format("embedded-opentype"),url(../fonts/ITCAvantGardePro-Bk.woff2) format("woff2"),url(../fonts/ITCAvantGardePro-Bk.woff) format("woff"),url(../fonts/ITCAvantGardePro-Bk.ttf) format("truetype"),url(../fonts/ITCAvantGardePro-Bk.svg#ITCAvantGardePro-Bk) format("svg");font-weight:300;font-style:normal} */
+@font-face {
+    font-family: 'Gotham-Light';
+    src: url('fonts/Gotham-Light.eot');
+    src: url('fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'), url('fonts/Gotham-Light.woff2') format('woff2'), url('fonts/Gotham-Light.woff') format('woff'), url('fonts/Gotham-Light.ttf') format('truetype'), url('fonts/Gotham-Light.svg#Gotham-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url('fonts/Gotham-Bold.eot');
+    src: url('fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/Gotham-Bold.woff2') format('woff2'), url('fonts/Gotham-Bold.woff') format('woff'), url('fonts/Gotham-Bold.ttf') format('truetype'), url('fonts/Gotham-Bold.svg#Gotham-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url('fonts/Gotham-Medium.eot');
+    src: url('fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/Gotham-Medium.woff2') format('woff2'), url('fonts/Gotham-Medium.woff') format('woff'), url('fonts/Gotham-Medium.ttf') format('truetype'), url('fonts/Gotham-Medium.svg#Gotham-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*reset css ends*/
+
+/* common css starts */
+
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility
+}
+body {
+    -webkit-font-smoothing: antialiased
+}
+.container {
+    width: 1170px;
+}
+.containe80 {
+    width: 80%;
+    margin: 0 auto;
+}
+.display-block {
+    display: block
+}
+h1 {
+    font-size: 36px;
+    color: #fff;
+    font-family: 'Gotham-Light';
+    line-height: 50px;
+}
+h6 {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Gotham-Light';
+}
+.detraxi-info {
+    font-size: 24px;
+    color: #000;
+    line-height: 45px;
+    font-family: 'Gotham-Light';
+}
+a:hover {
+    text-decoration: none
+}
+h2 {
+    color: #000;
+    font-size: 26px;
+    font-family: 'Gotham-Light';
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover, .find-out-more-btn:hover, a:hover {
+
+    /* background-image:-webkit-gradient(linear,left top,right top,color-stop(0,#e00a1a),color-stop(0.5,#2a348b));
+    background-image:gradient(linear,left top,right top,color-stop(0,#e00a1a),color-stop(0.5,#2a348b));
+    color:transparent;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    font-weight:700; */
+    color: #a14762;
+    transition: .4s all ease
+}
+a {
+    color: #fff;
+}
+.nopadding {
+    padding: 0;
+}
+.width100 {
+    width: 100%;
+    height: auto;
+}
+.heigh100 {
+    height: 100%;
+    width: auto;
+}
+section.common {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+/* common css ends */
+h1.heading {
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+}
+h2.heading {
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.about-sec h2.heading {
+    color: #fff;
+}
+h1.heading span, h2.heading span {
+    position: relative;
+    padding: 25px 0;
+}
+h1.heading span:before, h2.heading span:before {
+    border-top: 1px solid #2b3181;
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: #2b3181;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+.about-sec h2.heading span:before, .csr-sec h2.heading span:before {
+    border-top: 1px solid #FFF;
+    background: #FFF;
+}
+
+/* .partners h2.heading span:before, .news_press h2.heading span:before, .contact-sec h2.heading span:before, .subscribe h2.heading span:before { border-top: 1px solid #FFF;
+background: #2b3181;
+} */
+.partners h2.heading span, .team-sec h2.heading span, .news_press h2.heading span, .contact-sec h2.heading span, .investors h2.heading span, .subscribe h2.heading span {
+    color: #2b3181;
+}
+.future-sec {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.blue {
+    color: #2b3181;
+}
+.white {
+    color: #fff;
+}
+
+/*===============================================================================================
+
+Nandkishor 14 May 2019
+
+=================================================================================================*/
+.no-gutters {
+    padding-right: 0;
+    padding-left: 0;
+}
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translate(100px, -50%);
+}
+.banner-text h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 80px;
+}
+.circle-icon {
+    border: 1px solid #fff;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    font-size: 30px;
+    float: left;
+    margin-right: 20px;
+}
+.future-con {
+    padding-top: 30px;
+    width: 350px;
+    height: 200px;
+    border-right: 1px solid #ececec;
+    margin-bottom: 30px;
+}
+.future-con.border-none {
+    border-right: none;
+}
+.our-edge-border {
+    border-top: 1px solid #ececec;
+    padding-top: 30px;
+}
+h6.circle {
+    line-height: 50px;
+}
+.future-con-img {
+    float: left;
+    width: 30%;
+}
+.future-con-inner {
+    width: 85%;
+    margin: 0 auto;
+    display: block;
+}
+.future-con-desc {
+    float: left;
+    width: 55%;
+    font-size: 22px;
+    color: #2b3181;
+    line-height: 30px;
+}
+.plus-icon {
+    width: 22px;
+    height: 22px;
+    border-radius: 100px;
+    text-align: center;
+    color: #2c4b55;
+    background: #07c5ff;
+    font-size: 10px;
+    line-height: 23px;
+}
+.about-sec, .csr-sec {
+    background: url('../images/about_bg.jpg') no-repeat 0 0;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    color: #fff;
+}
+.about-sec h3 {
+    color: #000;
+    font-size: 26px;
+    font-family: 'Gotham-Light';
+    text-transform: uppercase;
+}
+.about-sec h3 {
+    color: white;
+}
+.investors {
+    background: #b1e5ff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.investors-content {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    color: #2b3181;
+    margin-bottom: 50px;
+}
+.find-more {
+    text-align: center;
+    padding: 70px 0 50px;
+}
+.gradientbtn {
+    padding-top: 70px;
+    text-align: center;
+}
+.gradientbtn a, .team-btn a {
+    background: rgba(54, 168, 225, 1);
+    background: -moz-linear-gradient(left, rgba(54, 168, 225, 1) 0%, rgba(102, 36, 131, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(54, 168, 225, 1)), color-stop(100%, rgba(102, 36, 131, 1)));
+    background: -webkit-linear-gradient(left, rgba(54, 168, 225, 1) 0%, rgba(102, 36, 131, 1) 100%);
+    background: -o-linear-gradient(left, rgba(54, 168, 225, 1) 0%, rgba(102, 36, 131, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(54, 168, 225, 1) 0%, rgba(102, 36, 131, 1) 100%);
+    background: linear-gradient(to right, rgba(54, 168, 225, 1) 0%, rgba(102, 36, 131, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#36a8e1', endColorstr='#662483', GradientType=1);
+    font-weight: 700;
+    color: #FFF;
+    padding: 15px 25px;
+    margin: 0px auto;
+    transition: .4s all ease;
+}
+.team-btn a.grey-btn {
+    background: #797979;
+    margin-left: 10px;
+}
+.team-btn {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.partners {
+    background: #fff;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.partners-content {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: #2b3181;
+    margin-bottom: 50px;
+}
+.partners-logo div {
+    float: left;
+    width: 157px;
+    height: 160px;
+    margin: 0 12px;
+    border: 1px solid #eaeaea;
+    text-align: center;
+    padding-top: 50px;
+    border-radius: 5px;
+}
+.partners-logo div img {
+    margin: 0 auto;
+}
+.find-more a {
+    background: #666666;
+    color: #FFF;
+    padding: 15px 25px;
+    margin: 0px auto;
+    transition: .4s all ease;
+}
+.news_press {
+    background: #f8f8f8;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+.news_press h3 {
+    font-size: 22px;
+    line-height: 30px;
+}
+.news_press p {
+    color: #8e929b;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.news_press p span {
+    color: #2b3181;
+}
+.csr-content-area {
+    padding: 25px;
+    background: #fff;
+    color: #2b3181;
+    font-size: 17px;
+}
+.equal {
+    background: #fff;
+}
+.contact-content-wrap a {
+    color: #000;
+}
+.contact-content-wrap a:hover {
+    color: #2b3181;
+}
+.contact-sec {
+    background: #FFF;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.contact-sec iframe {
+    width: 100%;
+    height: 800px;
+}
+.contact-content-wrap {
+    background: #f8f8f8;
+    padding: 50px;
+}
+.form-input {
+    width: 100%;
+    margin-top: 50px;
+}
+.form-input label, .form-input input {
+    width: 100%;
+    font-size: 20px;
+}
+.form-input input {
+    border: none;
+    background: transparent;
+    font-size: 40px;
+    border-bottom: 1px solid #e9ebee;
+    margin-bottom: 20px;
+    color: #3ba9e0;
+}
+.form-input input:focus {
+    outline: none;
+}
+.submit-btn a {
+    background: #666666;
+    padding: 10px 20px;
+    color: #fff;
+}
+.submit-btn a:hover {
+    color: #000;
+}
+.equal-contact-colum {
+    background: #f8f8f8;
+    height: 800px;
+}
+.subscribe {
+    background: #b1e5ff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.subscribe .form-input {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.subscribe .form-input input {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.subscribe .submit-btn a {
+    background: #FFF;
+    padding: 10px 20px;
+    color: #2b3181;
+    font-weight: 700;
+}
+.footer {
+    color: #8e929b;
+    font-size: 12px;
+}
+.footer-logo {
+    text-align: right;
+    line-height: 60px;
+    font-size: 12px;
+    padding-right: 10px;
+}
+.footer-logo a {
+    float: right;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.footer-copy-right {
+    font-size: 12px;
+    line-height: 60px;
+    padding-left: 10px;
+}
+.team-btn {
+}
+
+/* prajna css starts */
+.slick-slide {
+    height: auto
+}
+.circle-icon i.fa.fa-angle-right {
+    line-height: 45px;
+}
+.banner-img img {
+    height: 100vh;
+    object-fit: cover;
+}
+.overview-sec {
+    padding: 100px 0;
+}
+.sub-title h1 {
+    font-size: 45px;
+    line-height: 45px;
+    color: #2b3181;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}
+.sub-title h1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -25px;
+    width: 100px;
+    height: 2px;
+    background: #2b3181;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+.overview-video {
+    margin: 50px 0;
+}
+p {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: #2b3181;
+}
+.media-left {
+    padding-right: 30px;
+}
+.media-right {
+    padding-left: 30px;
+}
+hr {
+    margin: 50px 0;
+}
+.berkley-sec {
+    background: rgba(54, 168, 225, 1);
+    background: -moz-linear-gradient(left, rgba(54, 168, 225, 1) 0%, rgba(102, 36, 131, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(54, 168, 225, 1)), color-stop(100%, rgba(102, 36, 131, 1)));
+    background: -webkit-linear-gradient(left, rgba(54, 168, 225, 1) 0%, rgba(102, 36, 131, 1) 100%);
+    background: -o-linear-gradient(left, rgba(54, 168, 225, 1) 0%, rgba(102, 36, 131, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(54, 168, 225, 1) 0%, rgba(102, 36, 131, 1) 100%);
+    background: linear-gradient(to right, rgba(54, 168, 225, 1) 0%, rgba(102, 36, 131, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#36a8e1', endColorstr='#662483', GradientType=1);
+    padding: 100px 0 200px;
+}
+.berkley-sec .sub-title h1 {
+    color: #fff;
+}
+.berkley-sec .sub-title h1::before {
+    background: #fff;
+}
+.brief {
+    width: 40%;
+    margin: 50px auto;
+    text-align: center;
+}
+.brief p {
+    color: #fff;
+}
+.berkeley-dec h2 {
+    font-size: 200px;
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+    position: relative;
+}
+.berkeley-dec h2 span {
+    position: relative;
+}
+.berkeley-dec h2 span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    left: 0;
+}
+.berkeley-dec h2 span::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background: #fff;
+    bottom: -10px;
+    right: 0;
+}
+.berkeley-dec h2 span small {
+    font-size: 18px;
+    position: absolute;
+    bottom: -130px;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    line-height: 20px;
+    letter-spacing: 2px;
+    min-height: 100px;
+}
+
+/* prajna css ends */
