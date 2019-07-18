@@ -689,5 +689,41 @@ ul.number {
     margin-left: 25px;
     margin-top: 10px;
 }
+.membership-sec {
+    background: #b1e5ff;
+    padding: 100px 0;
+}
+.membership-sec .brief p {
+    color: #2b3181;
+}
+.membership-sec .brief {
+    width: 50%;
+}
+h4.media-heading {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #2b3181
+}
+.conference-sec {
+    padding: 100px 0;
+}
+.conference-sec .brief p {
+    color: #2b3181;
+}
+.conference-sec .brief {
+    width: 75%;
+}
+.partner-icon img {
+    margin: 0 auto;
+}
+.partner-desc h4 {
+    text-align: center;
+    line-height: 26px;
+    margin-top: 20px;
+}
+section.conference-sec .hr-line {
+    margin: 50px 0;
+}
 
 /* prajna css ends */
